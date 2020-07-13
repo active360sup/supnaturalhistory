@@ -1,0 +1,37 @@
+
+html, body {
+  background-color: #f9fbfd;
+}
+
+a:link {
+  color: #006bc9;
+}
+
+a:visited {
+  color: #F70084;
+}
+
+h1 {
+  color: #003462;
+}
+
+h2 {
+  color: #003462;
+}
+
+h3 {
+  color: #003462;
+}
+
+h4 {
+  color: #003462;
+}
+
+h5 {
+  color: #003462;
+}
+
+p {
+  color: #003462;
+  font-size: 15px;
+}
