@@ -11,7 +11,7 @@
 
 
 
-<title>Thames Natural History</title>
+<title>sup.utf8</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -218,6 +218,22 @@ window.buildTabsets = function(tocID) {
   });
 };
 
+</script>
+<script>// Hide empty <a> tag within highlighted CodeBlock for screen reader accessibility (see https://github.com/jgm/pandoc/issues/6352#issuecomment-626106786) -->
+// v0.0.1
+// Written by JooYoung Seo (jooyoung@psu.edu) and Atsushi Yasumoto on June 1st, 2020.
+
+document.addEventListener('DOMContentLoaded', function() {
+  const codeList = document.getElementsByClassName("sourceCode");
+  for (var i = 0; i < codeList.length; i++) {
+    var linkList = codeList[i].getElementsByTagName('a');
+    for (var j = 0; j < linkList.length; j++) {
+      if (linkList[j].innerHTML === "") {
+        linkList[j].setAttribute('aria-hidden', 'true');
+      }
+    }
+  }
+});
 </script>
 
 
@@ -1886,9 +1902,10 @@ content: "\f18b";
 </ul>
 <p>Useful information:</p>
 <ul>
-<li><a href="https://redpaddleco.com/en-gb/how-to-read-the-wind-for-paddleboarding/" target="_blank">How to read the wind for paddleboarding</a> <br></li>
+<li><a href="https://www.academyofsurfing.com/news/how-reading-cloud-types-can-keep-you-safe" target="_blank">How Reading Cloud Types Can Keep You Safe</a> <br></li>
 <li><a href="https://rnli.org/safety/choose-your-activity/stand-up-paddle-boarding" target="_blank">Stand Up Paddleboarding Tips and Safety Advice</a> <br></li>
 <li><a href="https://www.active360.co.uk/TSK-courses.htm" target="_blank">Thames Skills Knowledge (TSK) course</a> <br></li>
+<li><a href="http://www.pla.co.uk/assets/PLA-Tide-Tables-2020.pdf" target="_blank">Tide Tables and Port Information (PLA)</a> <br></li>
 <li><a href="http://rjen.me.uk/tides/" target="_blank">Tide Times</a> <br></li>
 <li><a href="https://www.boatingonthethames.co.uk/assets/Tideway%20Code_Digital%20(web).pdf" target="_blank">Tideway Code</a> <br></li>
 <li><a href="https://www.pla.co.uk/assets/safetybulletin6of2020-useofleashesforstand-uppaddleboardssups.pdf?utm_campaign=Safety%20and%20Recreation&amp;utm_content=134912254&amp;utm_medium=social&amp;utm_source=twitter&amp;hss_channel=tw-146092098" target="_blank">Use of Leashes for Stand-Up Paddleboards on the Tidal Thames</a> <br></li>
