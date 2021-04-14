@@ -13,6 +13,28 @@
   color: white;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #006e86;
+}
+
+d-title h1,
+d-article h2,
+d-article h3,
+.posts-list .description h2,
+.posts-list .description h3,
+.posts-list > h1 {
+    font-weight: 100;
+    color: #006e86;
+}
+
+d-article a {
+    border-bottom: 1px solid;
+    color: #006e86;
+    text-decoration: none;
+}
+
 @media print {
   .distill-site-nav {
     display: none;
