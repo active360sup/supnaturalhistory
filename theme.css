@@ -1,6 +1,7 @@
+
 .distill-site-nav {
   background-color: #006e86;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -15,6 +16,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
+  font-size: 16px;
   font-weight: 300;
   color: #006e86;
 }
